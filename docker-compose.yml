@@ -1,0 +1,37 @@
+# Déploiement VPS derrière Traefik (réseau externe "traefik" déjà créé).
+# Usage : DOMAIN=votre-domaine.com docker compose up -d --build
+services:
+  portfolio:
+    build:
+      context: .
+      args:
+        NEXT_PUBLIC_SITE_URL: https://${DOMAIN}
+        NEXT_PUBLIC_CONTACT_EMAIL: ${NEXT_PUBLIC_CONTACT_EMAIL:-}
+        NEXT_PUBLIC_CONTACT_PHONE: ${NEXT_PUBLIC_CONTACT_PHONE:-}
+        NEXT_PUBLIC_WHATSAPP: ${NEXT_PUBLIC_WHATSAPP:-}
+        NEXT_PUBLIC_LINKEDIN_URL: ${NEXT_PUBLIC_LINKEDIN_URL:-}
+        NEXT_PUBLIC_GITHUB_URL: ${NEXT_PUBLIC_GITHUB_URL:-}
+        NEXT_PUBLIC_CV_FR: ${NEXT_PUBLIC_CV_FR:-}
+        NEXT_PUBLIC_CV_EN: ${NEXT_PUBLIC_CV_EN:-}
+        NEXT_PUBLIC_CV_AR: ${NEXT_PUBLIC_CV_AR:-}
+        NEXT_PUBLIC_PHOTO: ${NEXT_PUBLIC_PHOTO:-}
+        NEXT_PUBLIC_AVAILABILITY: ${NEXT_PUBLIC_AVAILABILITY:-available}
+    restart: unless-stopped
+    environment:
+      # Secrets d'exécution (jamais dans le code) — formulaire de contact
+      RESEND_API_KEY: ${RESEND_API_KEY:-}
+      CONTACT_TO_EMAIL: ${CONTACT_TO_EMAIL:-}
+      CONTACT_FROM_EMAIL: ${CONTACT_FROM_EMAIL:-}
+      CONTACT_FORM_ENDPOINT: ${CONTACT_FORM_ENDPOINT:-}
+    networks: [traefik]
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=traefik
+      - traefik.http.routers.portfolio.rule=Host(`${DOMAIN}`) || Host(`www.${DOMAIN}`)
+      - traefik.http.routers.portfolio.entrypoints=websecure
+      - traefik.http.routers.portfolio.tls.certresolver=letsencrypt
+      - traefik.http.services.portfolio.loadbalancer.server.port=3000
+
+networks:
+  traefik:
+    external: true

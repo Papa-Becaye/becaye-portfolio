@@ -1,0 +1,301 @@
+{
+  "meta": {
+    "title": "Bécaye FALL — Développeur Full Stack & Entrepreneur Tech",
+    "description": "Portfolio de Bécaye FALL, développeur Full Stack et entrepreneur tech basé à Dakar. Conception d'applications web, d'API, de bases de données et de produits numériques.",
+    "projectTitle": "{{name}} — Bécaye FALL",
+    "ogAlt": "Bécaye FALL — Développeur Full Stack & Entrepreneur Tech"
+  },
+  "a11y": {
+    "skip": "Aller au contenu principal",
+    "home": "Bécaye FALL — retour à l'accueil",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "language": "Choisir la langue",
+    "mainNav": "Navigation principale",
+    "backToTop": "Retour en haut de page",
+    "externalLink": "(s'ouvre dans un nouvel onglet)"
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "expertise": "Expertise",
+    "projects": "Projets",
+    "experience": "Parcours",
+    "contact": "Contact",
+    "cv": "Télécharger le CV",
+    "cvShort": "CV",
+    "cvRequest": "Demander mon CV",
+    "cvRequestShort": "Mon CV"
+  },
+  "availability": {
+    "available": "Disponible pour de nouvelles opportunités",
+    "limited": "Disponibilité limitée",
+    "unavailable": "Actuellement indisponible",
+    "availableShort": "Disponible",
+    "limitedShort": "Limité",
+    "unavailableShort": "Indisponible"
+  },
+  "hero": {
+    "label": "Développeur Full Stack & Entrepreneur Tech",
+    "title": ["Je conçois", "des produits numériques,", "pas seulement des sites web."],
+    "subtitle": "Je transforme des idées et des problématiques réelles en solutions numériques performantes, évolutives et pensées pour leurs utilisateurs.",
+    "name": "Nom",
+    "location": "Basé à",
+    "localTime": "Heure locale",
+    "status": "Statut",
+    "ctaProjects": "Découvrir mes projets",
+    "ctaContact": "Me contacter",
+    "scroll": "Défiler",
+    "terminalReady": "prêt"
+  },
+  "about": {
+    "eyebrow": "À propos",
+    "title": "Au-delà du *code*.",
+    "paragraphs": [
+      "Je suis Bécaye FALL, développeur Full Stack et entrepreneur tech. Je m'intéresse à toute la chaîne de création d'un produit numérique : de la compréhension du besoin à la conception, au développement et au déploiement.",
+      "J'aime explorer les technologies, résoudre des problèmes complexes et construire des solutions qui ont une utilité réelle.",
+      "Pour moi, développer ne consiste pas simplement à écrire du code. Il s'agit de comprendre un problème et de construire une réponse adaptée."
+    ],
+    "principlesTitle": "Ma façon de travailler",
+    "principles": [
+      { "title": "Comprendre le problème.", "text": "Avant la technique, il y a un besoin, des utilisateurs et un contexte." },
+      { "title": "Construire la solution.", "text": "Concevoir l'architecture, modéliser les données, développer et déployer." },
+      { "title": "Créer un impact réel.", "text": "Livrer des produits qui servent à quelque chose, pas seulement des fonctionnalités." }
+    ],
+    "facts": [
+      { "label": "Basé à", "value": "Dakar, Sénégal" },
+      { "label": "Profil", "value": "Full Stack Developer & Tech Entrepreneur" },
+      { "label": "Terrain de jeu", "value": "Applications web, API, données, déploiement" }
+    ],
+    "traits": ["Orienté produit", "Curieux de technologie", "De l'idée au déploiement"],
+    "photoAlt": "Portrait de Bécaye FALL",
+    "photoCaption": "Dakar, Sénégal"
+  },
+  "expertise": {
+    "eyebrow": "Expertise",
+    "title": "Une vision complète de la *stack*.",
+    "intro": "Du navigateur au serveur, de la base de données au déploiement : les outils que j'utilise pour construire des produits de bout en bout.",
+    "exploration": "En exploration",
+    "domains": {
+      "frontend": { "title": "Frontend", "description": "Des interfaces claires, rapides et accessibles, construites avec des composants maintenables." },
+      "backend": { "title": "Backend", "description": "Des API robustes et une logique métier structurée côté serveur." },
+      "database": { "title": "Base de données", "description": "Modélisation des données et persistance relationnelle." },
+      "mobile": { "title": "Développement mobile", "description": "Des applications mobiles multiplateformes." },
+      "devops": { "title": "DevOps & Outils", "description": "Conteneurisation, versionnage et déploiement sur serveur." },
+      "innovation": { "title": "Exploration & Innovation", "description": "Les technologies que j'explore pour imaginer les produits de demain." }
+    },
+    "items": {
+      "ai": "Intelligence artificielle",
+      "aiAgents": "Agents IA",
+      "automation": "Automatisation"
+    }
+  },
+  "projects": {
+    "eyebrow": "Projets",
+    "title": "Travaux *sélectionnés*.",
+    "intro": "Des produits et des expériences qui racontent ma façon de concevoir et de construire.",
+    "viewCase": "Voir le projet",
+    "viewExperience": "Voir l'expérience",
+    "visit": "Visiter le site",
+    "categoryLabel": "Catégorie",
+    "stackLabel": "Stack",
+    "roleLabel": "Rôle",
+    "more": "D'autres projets viendront compléter cette sélection.",
+    "back": "Tous les projets",
+    "next": "Projet suivant",
+    "previewLabel": "Aperçu graphique",
+    "items": {
+      "tabaxbi": {
+        "name": "Tabaxbi",
+        "category": "SaaS / Technologie de la construction",
+        "kind": "Projet entrepreneurial",
+        "summary": "Une plateforme numérique collaborative conçue pour améliorer la gestion et le suivi des projets de construction.",
+        "intro": "Tabaxbi vise à faciliter la collaboration entre les clients, les superviseurs, les entreprises et les fournisseurs du secteur BTP.",
+        "role": "Conception & développement",
+        "details": {
+          "problem": {
+            "title": "Le problème",
+            "text": "Un projet de construction rassemble de nombreux acteurs : clients, superviseurs, entreprises, fournisseurs. L'information peut circuler de façon dispersée, ce qui complique le suivi d'un chantier et la coordination entre les intervenants."
+          },
+          "vision": {
+            "title": "La vision",
+            "text": "Offrir un espace commun où chaque intervenant d'un projet de construction se retrouve, partage et suit l'avancement. Une plateforme pensée comme un produit, pas comme un simple outil."
+          },
+          "solution": {
+            "title": "La solution",
+            "text": "Tabaxbi rassemble la mise en relation autour des projets, le suivi des chantiers et le partage d'informations dans une plateforme collaborative, ouverte à chaque catégorie d'intervenants.",
+            "actorsLabel": "Intervenants",
+            "actors": ["Clients", "Superviseurs", "Entreprises", "Fournisseurs"]
+          },
+          "features": {
+            "title": "Fonctionnalités",
+            "items": [
+              "Publication et mise en relation autour des projets",
+              "Suivi des chantiers",
+              "Partage de photos et de vidéos",
+              "Documents de chantier",
+              "Informations de progression",
+              "Collaboration entre les différents intervenants"
+            ]
+          },
+          "stack": {
+            "title": "Choix techniques",
+            "items": [
+              { "name": "React + Vite", "role": "Interface web réactive et build rapide." },
+              { "name": "JavaScript", "role": "Un langage commun au client et au serveur." },
+              { "name": "Redux", "role": "Gestion de l'état partagé de l'application." },
+              { "name": "Node.js + Express.js", "role": "API REST et logique métier côté serveur." },
+              { "name": "Prisma", "role": "Modélisation et accès aux données." },
+              { "name": "PostgreSQL", "role": "Base de données relationnelle." },
+              { "name": "Docker", "role": "Conteneurisation pour des déploiements reproductibles." },
+              { "name": "Traefik", "role": "Reverse proxy et routage des services." }
+            ]
+          },
+          "architecture": {
+            "title": "Architecture générale",
+            "text": "Une application cliente dialogue avec une API REST. Prisma assure l'accès à PostgreSQL. L'ensemble est conteneurisé avec Docker et exposé via Traefik.",
+            "layers": [
+              { "name": "Client", "tech": "React · Vite · Redux" },
+              { "name": "Routage", "tech": "Traefik" },
+              { "name": "API", "tech": "Node.js · Express.js" },
+              { "name": "Accès aux données", "tech": "Prisma" },
+              { "name": "Données", "tech": "PostgreSQL" }
+            ],
+            "wrapper": "Conteneurisé avec Docker"
+          },
+          "perspectives": {
+            "title": "Perspectives d'évolution",
+            "note": "Pistes envisagées",
+            "items": [
+              "Approfondir le suivi de progression et la lisibilité de l'avancement des chantiers.",
+              "Enrichir la collaboration entre les différents intervenants.",
+              "Explorer l'automatisation et l'IA pour assister la gestion documentaire."
+            ]
+          }
+        }
+      },
+      "quadraAo": {
+        "name": "Quadra AO",
+        "category": "Expérience professionnelle / SaaS",
+        "kind": "Stage de six mois",
+        "summary": "Participation au développement d'une solution SaaS destinée aux professionnels de l'affichage publicitaire.",
+        "intro": "Une expérience professionnelle au sein d'une équipe produit, autour d'une solution SaaS dédiée au secteur de l'affichage publicitaire.",
+        "role": "Développeur Full Stack Junior",
+        "details": {
+          "overview": {
+            "title": "Contexte",
+            "text": "Stage de six mois en tant que Développeur Full Stack Junior, consacré à la participation au développement d'une solution SaaS destinée aux professionnels de l'affichage publicitaire."
+          },
+          "role": {
+            "title": "Rôle",
+            "text": "Développeur Full Stack Junior : contribution au développement de la solution, côté interface et côté serveur."
+          },
+          "stack": {
+            "title": "Environnement technique",
+            "items": [
+              { "name": "Vue.js", "role": "Développement de l'interface web." },
+              { "name": ".NET", "role": "Développement côté serveur." }
+            ]
+          },
+          "note": "Cette page se limite aux éléments documentés de l'expérience. Elle pourra être enrichie ultérieurement."
+        }
+      }
+    }
+  },
+  "experience": {
+    "eyebrow": "Parcours",
+    "title": "Mon *parcours*.",
+    "intro": "Les expériences, projets et collaborations qui construisent mon profil.",
+    "next": "À suivre",
+    "nextText": "De nouvelles expériences, formations et collaborations viendront s'ajouter ici.",
+    "viewMore": "En savoir plus",
+    "types": {
+      "internship": "Stage",
+      "job": "Expérience professionnelle",
+      "project": "Projet entrepreneurial",
+      "education": "Formation",
+      "collaboration": "Collaboration"
+    },
+    "items": {
+      "quadraAo": {
+        "role": "Développeur Full Stack Junior",
+        "org": "QUADRA AO",
+        "period": "Stage de six mois",
+        "summary": "Participation au développement d'une solution SaaS destinée aux professionnels de l'affichage publicitaire."
+      },
+      "tabaxbi": {
+        "role": "Conception & développement",
+        "org": "Tabaxbi",
+        "period": "",
+        "summary": "Une plateforme collaborative pour la gestion et le suivi des projets de construction."
+      }
+    }
+  },
+  "entrepreneurship": {
+    "eyebrow": "Entrepreneuriat & Vision",
+    "title": "Voir plus loin que le *produit*.",
+    "statement": "Un bon produit ne se mesure pas à son code, mais à la valeur qu'il crée pour ceux qui l'utilisent. Je m'intéresse autant à cette valeur qu'à la manière de la construire.",
+    "flow": ["Problème", "Produit", "Valeur"],
+    "themesTitle": "Ce qui m'anime",
+    "themes": [
+      { "title": "Création de produits numériques", "text": "Partir d'un besoin réel, définir une proposition de valeur, puis construire un produit utilisable de bout en bout." },
+      { "title": "Résolution de problèmes", "text": "Reformuler avant de coder : un problème bien compris guide chaque décision technique." },
+      { "title": "Expérimentation technologique", "text": "Tester de nouveaux outils et de nouvelles architectures pour juger de leur utilité concrète." },
+      { "title": "Innovation", "text": "Chercher des approches plus simples et plus pertinentes pour les utilisateurs." },
+      { "title": "Intelligence artificielle", "text": "Explorer les API d'IA et les agents pour augmenter les produits, pas pour les décorer." },
+      { "title": "Automatisation", "text": "Supprimer les tâches répétitives et fluidifier les processus grâce à des workflows automatisés." },
+      { "title": "Transformation digitale", "text": "Accompagner le passage vers des outils numériques adaptés à la réalité des organisations." }
+    ],
+    "marquee": ["Produit", "Impact", "Innovation", "IA", "Automatisation", "Vision"]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "label": "Construisons quelque chose",
+    "title": "Une idée ? *Concrétisons-la.*",
+    "description": "Un projet, une opportunité professionnelle ou une idée à concrétiser ? Je serais ravi d'en discuter avec vous.",
+    "channels": "Canaux directs",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "whatsapp": "WhatsApp",
+    "phone": "Téléphone",
+    "form": {
+      "name": "Nom",
+      "namePlaceholder": "Votre nom complet",
+      "email": "Adresse email",
+      "emailPlaceholder": "vous@exemple.com",
+      "subject": "Sujet",
+      "subjectPlaceholder": "De quoi souhaitez-vous parler ?",
+      "message": "Message",
+      "messagePlaceholder": "Décrivez votre projet, votre besoin ou votre idée…",
+      "submit": "Envoyer le message",
+      "sending": "Envoi en cours…",
+      "successTitle": "Message envoyé.",
+      "successText": "Merci, votre message a bien été reçu. Je vous répondrai dès que possible.",
+      "again": "Envoyer un autre message",
+      "required": "obligatoire",
+      "fallback": "Vous pouvez aussi m'écrire directement :"
+    },
+    "errors": {
+      "name_required": "Veuillez saisir votre nom.",
+      "email_required": "Veuillez saisir votre adresse email.",
+      "email_invalid": "Cette adresse email n'est pas valide.",
+      "subject_required": "Veuillez indiquer un sujet.",
+      "message_required": "Veuillez écrire votre message.",
+      "message_short": "Votre message doit contenir au moins 10 caractères.",
+      "summary": "Veuillez corriger les champs signalés.",
+      "generic": "Une erreur est survenue. Veuillez réessayer.",
+      "not_configured": "L'envoi de messages n'est pas encore configuré sur ce site. Merci de me contacter directement.",
+      "rate_limited": "Trop de tentatives. Réessayez dans quelques minutes.",
+      "network": "Connexion impossible. Vérifiez votre réseau et réessayez."
+    }
+  },
+  "footer": {
+    "tagline": "Je conçois et je construis des produits numériques.",
+    "rights": "Tous droits réservés.",
+    "built": "Conçu et développé à Dakar.",
+    "navigate": "Navigation",
+    "connect": "Réseaux",
+    "backToTop": "Haut de page"
+  }
+}

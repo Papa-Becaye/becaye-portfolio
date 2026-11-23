@@ -1,0 +1,301 @@
+{
+  "meta": {
+    "title": "Bécaye FALL — Full Stack Developer & Tech Entrepreneur",
+    "description": "Portfolio of Bécaye FALL, a Full Stack developer and tech entrepreneur based in Dakar. Web applications, APIs, databases and digital products.",
+    "projectTitle": "{{name}} — Bécaye FALL",
+    "ogAlt": "Bécaye FALL — Full Stack Developer & Tech Entrepreneur"
+  },
+  "a11y": {
+    "skip": "Skip to main content",
+    "home": "Bécaye FALL — back to home",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "language": "Choose language",
+    "mainNav": "Main navigation",
+    "backToTop": "Back to top",
+    "externalLink": "(opens in a new tab)"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "expertise": "Expertise",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact",
+    "cv": "Download CV",
+    "cvShort": "CV",
+    "cvRequest": "Request my CV",
+    "cvRequestShort": "My CV"
+  },
+  "availability": {
+    "available": "Available for new opportunities",
+    "limited": "Limited availability",
+    "unavailable": "Currently unavailable",
+    "availableShort": "Available",
+    "limitedShort": "Limited",
+    "unavailableShort": "Unavailable"
+  },
+  "hero": {
+    "label": "Full Stack Developer & Tech Entrepreneur",
+    "title": ["I build", "digital products,", "not just websites."],
+    "subtitle": "I turn real ideas and real problems into high-performing, scalable digital solutions designed around the people who use them.",
+    "name": "Name",
+    "location": "Based in",
+    "localTime": "Local time",
+    "status": "Status",
+    "ctaProjects": "Explore my projects",
+    "ctaContact": "Get in touch",
+    "scroll": "Scroll",
+    "terminalReady": "ready"
+  },
+  "about": {
+    "eyebrow": "About",
+    "title": "Beyond the *code*.",
+    "paragraphs": [
+      "I'm Bécaye FALL, a Full Stack developer and tech entrepreneur. I care about the whole chain behind a digital product: from understanding the need to design, development and deployment.",
+      "I enjoy exploring technologies, solving complex problems and building solutions that are genuinely useful.",
+      "To me, development is not just about writing code. It is about understanding a problem and building the right answer to it."
+    ],
+    "principlesTitle": "How I work",
+    "principles": [
+      { "title": "Understand the problem.", "text": "Before the technology, there is a need, there are users and there is a context." },
+      { "title": "Build the solution.", "text": "Design the architecture, model the data, develop and deploy." },
+      { "title": "Create real impact.", "text": "Ship products that matter, not just features." }
+    ],
+    "facts": [
+      { "label": "Based in", "value": "Dakar, Senegal" },
+      { "label": "Profile", "value": "Full Stack Developer & Tech Entrepreneur" },
+      { "label": "Playground", "value": "Web apps, APIs, data, deployment" }
+    ],
+    "traits": ["Product-minded", "Curious about technology", "From idea to deployment"],
+    "photoAlt": "Portrait of Bécaye FALL",
+    "photoCaption": "Dakar, Senegal"
+  },
+  "expertise": {
+    "eyebrow": "Expertise",
+    "title": "A complete view of the *stack*.",
+    "intro": "From the browser to the server, from the database to deployment: the tools I use to build products end to end.",
+    "exploration": "Exploring",
+    "domains": {
+      "frontend": { "title": "Frontend", "description": "Clear, fast and accessible interfaces built from maintainable components." },
+      "backend": { "title": "Backend", "description": "Robust APIs and well-structured business logic on the server side." },
+      "database": { "title": "Database", "description": "Data modelling and relational persistence." },
+      "mobile": { "title": "Mobile Development", "description": "Cross-platform mobile applications." },
+      "devops": { "title": "DevOps & Tools", "description": "Containerisation, version control and server deployment." },
+      "innovation": { "title": "Exploration & Innovation", "description": "The technologies I explore to imagine tomorrow's products." }
+    },
+    "items": {
+      "ai": "Artificial Intelligence",
+      "aiAgents": "AI Agents",
+      "automation": "Automation"
+    }
+  },
+  "projects": {
+    "eyebrow": "Projects",
+    "title": "Selected *work*.",
+    "intro": "Products and experiences that show how I design and build.",
+    "viewCase": "View project",
+    "viewExperience": "View experience",
+    "visit": "Visit website",
+    "categoryLabel": "Category",
+    "stackLabel": "Stack",
+    "roleLabel": "Role",
+    "more": "More projects will complete this selection.",
+    "back": "All projects",
+    "next": "Next project",
+    "previewLabel": "Graphic preview",
+    "items": {
+      "tabaxbi": {
+        "name": "Tabaxbi",
+        "category": "SaaS / Construction Technology",
+        "kind": "Entrepreneurial project",
+        "summary": "A collaborative digital platform designed to improve the management and monitoring of construction projects.",
+        "intro": "Tabaxbi aims to make collaboration easier between clients, supervisors, companies and suppliers in the construction industry.",
+        "role": "Design & development",
+        "details": {
+          "problem": {
+            "title": "The problem",
+            "text": "A construction project brings together many players: clients, supervisors, companies and suppliers. Information can end up scattered, which makes it harder to follow a site and to coordinate everyone involved."
+          },
+          "vision": {
+            "title": "The vision",
+            "text": "Offer a shared space where everyone involved in a construction project can meet, share and follow progress. A platform designed as a product, not just a tool."
+          },
+          "solution": {
+            "title": "The solution",
+            "text": "Tabaxbi brings together networking around projects, site monitoring and information sharing in one collaborative platform, open to every category of stakeholder.",
+            "actorsLabel": "Stakeholders",
+            "actors": ["Clients", "Supervisors", "Companies", "Suppliers"]
+          },
+          "features": {
+            "title": "Features",
+            "items": [
+              "Project publishing and networking",
+              "Construction site monitoring",
+              "Photo and video sharing",
+              "Site documents",
+              "Progress information",
+              "Collaboration between all stakeholders"
+            ]
+          },
+          "stack": {
+            "title": "Technical choices",
+            "items": [
+              { "name": "React + Vite", "role": "Responsive web interface and fast builds." },
+              { "name": "JavaScript", "role": "One language across client and server." },
+              { "name": "Redux", "role": "Shared application state management." },
+              { "name": "Node.js + Express.js", "role": "REST API and server-side business logic." },
+              { "name": "Prisma", "role": "Data modelling and data access." },
+              { "name": "PostgreSQL", "role": "Relational database." },
+              { "name": "Docker", "role": "Containerisation for reproducible deployments." },
+              { "name": "Traefik", "role": "Reverse proxy and service routing." }
+            ]
+          },
+          "architecture": {
+            "title": "General architecture",
+            "text": "A client application talks to a REST API. Prisma handles access to PostgreSQL. Everything is containerised with Docker and exposed through Traefik.",
+            "layers": [
+              { "name": "Client", "tech": "React · Vite · Redux" },
+              { "name": "Routing", "tech": "Traefik" },
+              { "name": "API", "tech": "Node.js · Express.js" },
+              { "name": "Data access", "tech": "Prisma" },
+              { "name": "Data", "tech": "PostgreSQL" }
+            ],
+            "wrapper": "Containerised with Docker"
+          },
+          "perspectives": {
+            "title": "Future directions",
+            "note": "Directions under consideration",
+            "items": [
+              "Deepen progress tracking and make site progress easier to read.",
+              "Enrich collaboration between all stakeholders.",
+              "Explore automation and AI to assist document management."
+            ]
+          }
+        }
+      },
+      "quadraAo": {
+        "name": "Quadra AO",
+        "category": "Professional Experience / SaaS",
+        "kind": "Six-month internship",
+        "summary": "Contribution to the development of a SaaS solution for outdoor advertising professionals.",
+        "intro": "A professional experience within a product team, around a SaaS solution dedicated to the outdoor advertising industry.",
+        "role": "Junior Full Stack Developer",
+        "details": {
+          "overview": {
+            "title": "Context",
+            "text": "A six-month internship as a Junior Full Stack Developer, contributing to the development of a SaaS solution for outdoor advertising professionals."
+          },
+          "role": {
+            "title": "Role",
+            "text": "Junior Full Stack Developer: contributing to the development of the solution, on both the interface and the server side."
+          },
+          "stack": {
+            "title": "Technical environment",
+            "items": [
+              { "name": "Vue.js", "role": "Web interface development." },
+              { "name": ".NET", "role": "Server-side development." }
+            ]
+          },
+          "note": "This page is limited to the documented elements of the experience. It may be expanded later."
+        }
+      }
+    }
+  },
+  "experience": {
+    "eyebrow": "Experience",
+    "title": "My *journey*.",
+    "intro": "The experiences, projects and collaborations that shape my profile.",
+    "next": "To be continued",
+    "nextText": "New experiences, education and collaborations will be added here.",
+    "viewMore": "Learn more",
+    "types": {
+      "internship": "Internship",
+      "job": "Professional experience",
+      "project": "Entrepreneurial project",
+      "education": "Education",
+      "collaboration": "Collaboration"
+    },
+    "items": {
+      "quadraAo": {
+        "role": "Junior Full Stack Developer",
+        "org": "QUADRA AO",
+        "period": "Six-month internship",
+        "summary": "Contribution to the development of a SaaS solution for outdoor advertising professionals."
+      },
+      "tabaxbi": {
+        "role": "Design & development",
+        "org": "Tabaxbi",
+        "period": "",
+        "summary": "A collaborative platform for the management and monitoring of construction projects."
+      }
+    }
+  },
+  "entrepreneurship": {
+    "eyebrow": "Entrepreneurship & Vision",
+    "title": "Think beyond the *product*.",
+    "statement": "A good product is not measured by its code, but by the value it creates for the people who use it. I care as much about that value as about how to build it.",
+    "flow": ["Problem", "Product", "Value"],
+    "themesTitle": "What drives me",
+    "themes": [
+      { "title": "Building digital products", "text": "Start from a real need, define a value proposition, then build a product that works end to end." },
+      { "title": "Problem solving", "text": "Reframe before coding: a well-understood problem guides every technical decision." },
+      { "title": "Technology experimentation", "text": "Try new tools and architectures to judge how useful they really are." },
+      { "title": "Innovation", "text": "Look for simpler, more relevant approaches for users." },
+      { "title": "Artificial intelligence", "text": "Explore AI APIs and agents to augment products, not to decorate them." },
+      { "title": "Automation", "text": "Remove repetitive tasks and streamline processes with automated workflows." },
+      { "title": "Digital transformation", "text": "Support the shift to digital tools that fit the reality of organisations." }
+    ],
+    "marquee": ["Product", "Impact", "Innovation", "AI", "Automation", "Vision"]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "label": "Let's build something",
+    "title": "Have an idea? *Let's make it happen.*",
+    "description": "A project, a professional opportunity or an idea to bring to life? I'd be glad to talk it through with you.",
+    "channels": "Direct channels",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "whatsapp": "WhatsApp",
+    "phone": "Phone",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your full name",
+      "email": "Email address",
+      "emailPlaceholder": "you@example.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "What would you like to talk about?",
+      "message": "Message",
+      "messagePlaceholder": "Describe your project, your need or your idea…",
+      "submit": "Send message",
+      "sending": "Sending…",
+      "successTitle": "Message sent.",
+      "successText": "Thank you, your message has been received. I will get back to you as soon as possible.",
+      "again": "Send another message",
+      "required": "required",
+      "fallback": "You can also write to me directly:"
+    },
+    "errors": {
+      "name_required": "Please enter your name.",
+      "email_required": "Please enter your email address.",
+      "email_invalid": "This email address is not valid.",
+      "subject_required": "Please enter a subject.",
+      "message_required": "Please write your message.",
+      "message_short": "Your message must be at least 10 characters long.",
+      "summary": "Please correct the highlighted fields.",
+      "generic": "Something went wrong. Please try again.",
+      "not_configured": "Message sending is not configured on this site yet. Please contact me directly.",
+      "rate_limited": "Too many attempts. Please try again in a few minutes.",
+      "network": "Unable to connect. Check your network and try again."
+    }
+  },
+  "footer": {
+    "tagline": "I design and build digital products.",
+    "rights": "All rights reserved.",
+    "built": "Designed and built in Dakar.",
+    "navigate": "Navigate",
+    "connect": "Elsewhere",
+    "backToTop": "Back to top"
+  }
+}
