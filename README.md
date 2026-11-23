@@ -20,10 +20,14 @@ npm install
 cp .env.example .env      # puis renseigner vos valeurs
 npm run dev               # http://localhost:3000  → redirige vers /fr
 ```
-Build de production :
+Build de production Next.js (VPS / Docker) :
 ```bash
-npm run build && npm run start
+npm run build:next && npm run start
 ```
+
+Build Cloudflare Workers (OpenNext) : `npm run build` produit `.open-next/`, puis
+`npx wrangler deploy` déploie ce bundle. C'est la commande à utiliser comme
+**Build command** dans Workers Builds.
 
 ## Personnaliser (variables à renseigner)
 Tout est centralisé dans **`src/data/site.js`** (valeurs vides = masquées, aucun faux lien) et peut être piloté par `.env` :
@@ -68,5 +72,5 @@ DOMAIN=votre-domaine.com docker compose up -d --build
 ```
 Le `Dockerfile` multi-stage produit une image Node `standalone` minimale (utilisateur non-root, healthcheck sur `/api/health`).
 Le `docker-compose.yml` contient les labels Traefik (HTTPS, Let's Encrypt via le resolver `letsencrypt` — adaptez le nom à votre configuration).
-Pour un déploiement hors Docker : `npm run build && npm run start` derrière Nginx en reverse proxy vers le port 3000.
+Pour un déploiement hors Docker : `npm run build:next && npm run start` derrière Nginx en reverse proxy vers le port 3000.
 Aucun secret n'est présent dans le code source.

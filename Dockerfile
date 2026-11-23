@@ -23,7 +23,7 @@ ARG NEXT_PUBLIC_CV_AR
 ARG NEXT_PUBLIC_PHOTO
 ARG NEXT_PUBLIC_AVAILABILITY
 ENV BUILD_STANDALONE=1 NEXT_TELEMETRY_DISABLED=1
-RUN npm run build
+RUN npm run build:next
 
 # ── Étape 3 : image finale minimale ───────────────────
 FROM node:22-alpine AS runner
