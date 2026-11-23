@@ -1,0 +1,32 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "main": ".open-next/worker.js",
+  "name": "becaye-portfolio",
+  "compatibility_date": "2026-11-23",
+  "compatibility_flags": [
+    // APIs Node.js requises par Next.js sur Workers
+    "nodejs_compat",
+    // fetch() vers des URLs publiques depuis l'app
+    "global_fetch_strictly_public"
+  ],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "services": [
+    {
+      "binding": "WORKER_SELF_REFERENCE",
+      // Doit correspondre exactement au champ "name" du Worker
+      "service": "becaye-portfolio"
+    }
+  ],
+  "images": {
+    "binding": "IMAGES"
+  },
+  "observability": {
+    "enabled": true
+  }
+  // Secrets (dashboard Cloudflare ou `npx wrangler secret put NOM`) :
+  // RESEND_API_KEY, CONTACT_TO_EMAIL, CONTACT_FROM_EMAIL, CONTACT_FORM_ENDPOINT, DATABASE_URL
+  // Les NEXT_PUBLIC_* doivent être définies au moment du `next build` (Workers Builds / .env).
+}
