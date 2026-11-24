@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Abstract learning cover">
+  <defs>
+    <linearGradient id="bg" x1="1" y1="0" x2="0" y2="1"><stop stop-color="#0b0b0f"/><stop offset="1" stop-color="#141419"/></linearGradient>
+    <radialGradient id="glow" cx="80%" cy="20%" r="60%"><stop stop-color="#62ff4a" stop-opacity=".16"/><stop offset="1" stop-color="#62ff4a" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <g fill="none" stroke="#292933" stroke-width="2">
+    <rect x="230" y="160" width="300" height="300" rx="14"/>
+    <rect x="450" y="200" width="300" height="300" rx="14"/>
+    <rect x="670" y="160" width="300" height="300" rx="14"/>
+  </g>
+  <g fill="#62ff4a" opacity=".85"><rect x="270" y="210" width="140" height="10" rx="5"/><rect x="490" y="250" width="100" height="10" rx="5"/><rect x="710" y="210" width="180" height="10" rx="5"/></g>
+  <g fill="#292933"><rect x="270" y="245" width="210" height="9" rx="4"/><rect x="490" y="285" width="210" height="9" rx="4"/><rect x="710" y="245" width="210" height="9" rx="4"/><rect x="270" y="280" width="170" height="9" rx="4"/><rect x="490" y="320" width="150" height="9" rx="4"/><rect x="710" y="280" width="140" height="9" rx="4"/></g>
+  <g fill="none" stroke="#62ff4a" stroke-width="2" opacity=".6"><path d="M530 310h140M750 350h-60"/></g>
+</svg>

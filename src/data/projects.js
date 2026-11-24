@@ -14,6 +14,8 @@ export const projects = [
     index: "01",
     featured: true,
     type: "project",
+    // Catégories affichées dans les filtres de /realisations
+    filters: ["saas", "web", "backend"],
     url: "https://tabaxbi.com",
     image: null, // ex: "/images/projects/tabaxbi.jpg"
     imageAlt: "",
@@ -36,6 +38,7 @@ export const projects = [
     index: "02",
     featured: false,
     type: "experience",
+    filters: ["saas", "experience"],
     url: null,
     image: null,
     imageAlt: "",

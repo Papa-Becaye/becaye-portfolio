@@ -3,6 +3,9 @@
     "title": "Bécaye FALL — Full Stack Developer & Tech Entrepreneur",
     "description": "Portfolio of Bécaye FALL, a Full Stack developer and tech entrepreneur based in Dakar. Web applications, APIs, databases and digital products.",
     "projectTitle": "{{name}} — Bécaye FALL",
+    "workTitle": "Work — Bécaye FALL",
+    "blogTitle": "Blog — Bécaye FALL",
+    "articleTitle": "{{title}} — Bécaye FALL",
     "ogAlt": "Bécaye FALL — Full Stack Developer & Tech Entrepreneur"
   },
   "a11y": {
@@ -25,7 +28,52 @@
     "cv": "Download CV",
     "cvShort": "CV",
     "cvRequest": "Request my CV",
-    "cvRequestShort": "My CV"
+    "cvRequestShort": "My CV",
+    "work": "Work",
+    "blog": "Blog"
+  },
+  "realisations": {
+    "eyebrow": "Portfolio",
+    "title": "Projects, *not demos*.",
+    "intro": "A selection of products and experiences where I designed, built and shipped real solutions — from idea to production.",
+    "filtersLabel": "Filter projects",
+    "all": "All",
+    "featured": "Featured project",
+    "count": "{{count}} projects",
+    "roleLabel": "Role",
+    "stackLabel": "Stack",
+    "viewCase": "View project",
+    "visit": "Visit website",
+    "empty": "No projects in this category yet.",
+    "filters": {
+      "web": "Web",
+      "saas": "SaaS",
+      "backend": "Backend",
+      "experience": "Work experience"
+    }
+  },
+  "blog": {
+    "eyebrow": "Field notes",
+    "title": "Notes from the *build*.",
+    "intro": "Lessons learned and ideas about Full Stack development, JavaScript, AI and building technology products.",
+    "filtersLabel": "Filter articles",
+    "all": "All",
+    "featured": "Featured",
+    "published": "Published",
+    "readTime": "{{minutes}} min read",
+    "readArticle": "Read article",
+    "back": "All articles",
+    "next": "Next article",
+    "tagsLabel": "Topics",
+    "coverAlt": "Article cover image",
+    "empty": "No articles in this category yet.",
+    "categories": {
+      "fullstack": "Full Stack",
+      "javascript": "JavaScript",
+      "ai": "Artificial intelligence",
+      "entrepreneurship": "Entrepreneurship",
+      "learnings": "Lessons learned"
+    }
   },
   "availability": {
     "available": "Available for new opportunities",

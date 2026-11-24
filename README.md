@@ -48,6 +48,10 @@ Tout est centralisé dans **`src/data/site.js`** (valeurs vides = masquées, auc
 - Projets : `src/data/projects.js` + textes sous `projects.items.<key>` dans chaque langue. Une page détail `/{lang}/projects/{slug}` est générée automatiquement. Ajoutez `image` pour afficher une vraie capture (sinon : composition graphique abstraite, étiquetée « aperçu graphique »).
 - Parcours : `src/data/experiences.js` (aucune date inventée : `dates: null` affiche la durée traduite)
 - Compétences : `src/data/skills.js` · Navigation : `src/data/navigation.js` · Langues : `src/i18n/languages.js`
+- Réalisations : `/{lang}/realisations` lit `projects[]` et ses `filters` (`saas`, `web`, `backend`, `experience`). Les libellés de filtres sont dans `realisations.filters.*`.
+- Blog : un article = **3 fichiers** `content/blog/<slug>.{fr,en,ar}.md` avec un frontmatter (`title`, `excerpt`, `category`, `date`, `readTime`, `cover`, `tags`, `featured`). Aucun CMS ni base de données : les fichiers sont lus au build, les pages `/{lang}/blog` et `/{lang}/blog/{slug}` sont générées statiquement. Les couvertures vivent dans `public/images/blog/`. Ajouter un article = ajouter ses 3 fichiers, puis relancer le build.
+
+> Le Markdown est rendu en éléments React (pas de HTML injecté). Le sous-ensemble pris en charge : titres `##`/`###`, paragraphes, listes, citations, `code`, **`gras`**, *italique*, liens et blocs de code.
 
 ## Formulaire de contact
 `POST /api/contact` — validation côté client **et** serveur, honeypot, limitation de débit, états de chargement / erreur / succès.

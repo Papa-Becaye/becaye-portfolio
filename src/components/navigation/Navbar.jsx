@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { navigation, sectionIds } from "@/data/navigation";
+import { navigation, sectionIds, hrefForItem } from "@/data/navigation";
 import useActiveSection from "@/hooks/useActiveSection";
 import useScrollDirection from "@/hooks/useScrollDirection";
 import { siteConfig } from "@/data/site";
@@ -22,12 +22,22 @@ export default function Navbar() {
   const sectionActive = useActiveSection(sectionIds, isHome);
   const [open, setOpen] = useState(false);
 
-  const active = isHome ? sectionActive : pathname.includes("/projects/") ? "projects" : null;
-
-  // Ferme le menu à chaque navigation
-  useEffect(() => {
+  // Ferme le menu quand la route change, sans setState synchronique dans un effet.
+  const navKey = `${pathname}|${lang}`;
+  const [previousNavKey, setPreviousNavKey] = useState(navKey);
+  if (previousNavKey !== navKey) {
+    setPreviousNavKey(navKey);
     setOpen(false);
-  }, [pathname, lang]);
+  }
+
+  const pageActive = pathname.startsWith(`/${lang}/realisations`)
+    ? "realisations"
+    : pathname.startsWith(`/${lang}/blog`)
+      ? "blog"
+      : pathname.includes("/projects/")
+        ? "projects"
+        : null;
+  const active = isHome ? sectionActive : pageActive;
 
   // Verrouille le scroll et gère Escape quand le menu mobile est ouvert
   useEffect(() => {
@@ -60,15 +70,15 @@ export default function Navbar() {
           </Link>
 
           <nav aria-label={t("a11y.mainNav")} className="hidden lg:block">
-            <ul className="flex items-center gap-1">
+            <ul className="flex items-center gap-0.5">
               {navigation.map((item) => {
                 const isActive = active === item.id;
                 return (
                   <li key={item.id}>
                     <Link
-                      href={`/${lang}#${item.id}`}
+                      href={hrefForItem(item, lang)}
                       aria-current={isActive ? "location" : undefined}
-                      className={`relative block px-3.5 py-2 text-sm transition-colors duration-200 ${
+                      className={`relative block px-2.5 py-2 text-sm transition-colors duration-200 xl:px-3.5 ${
                         isActive ? "text-fg" : "text-muted hover:text-fg"
                       }`}
                     >
@@ -77,7 +87,7 @@ export default function Navbar() {
                         <motion.span
                           layoutId="nav-active"
                           aria-hidden="true"
-                          className="absolute inset-x-3.5 -bottom-0.5 h-px bg-accent"
+                          className="absolute inset-x-2.5 -bottom-0.5 h-px bg-accent xl:inset-x-3.5"
                           transition={{ type: "spring", stiffness: 380, damping: 32 }}
                         />
                       )}
@@ -138,7 +148,7 @@ export default function Navbar() {
                     transition={{ delay: 0.05 + i * 0.05, duration: 0.4 }}
                   >
                     <Link
-                      href={`/${lang}#${item.id}`}
+                      href={hrefForItem(item, lang)}
                       onClick={() => setOpen(false)}
                       className="flex items-baseline gap-4 py-4 font-display text-[clamp(1.9rem,8vw,2.75rem)] font-semibold leading-tight transition-colors hover:text-accent"
                     >

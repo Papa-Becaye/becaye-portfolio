@@ -207,6 +207,69 @@ html[dir="rtl"] .marquee-track { animation-name: marquee-rtl; }
   *, *::before, *::after { transition-duration: 0.01ms !important; }
 }
 
+/* ───────────────────────────── Cartes & lecture (blog / réalisations) ───────────────────────────── */
+/* Halo très discret, uniquement là où le survol existe. */
+.card-spotlight { position: relative; isolation: isolate; }
+.card-spotlight::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: radial-gradient(85% 110% at 50% -12%, rgba(98, 255, 74, 0.13), transparent 62%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.card-spotlight > * { position: relative; z-index: 1; }
+@media (hover: hover) {
+  .card-spotlight:hover::after,
+  .card-spotlight:focus-within::after { opacity: 1; }
+}
+
+.prose-blog {
+  color: rgba(245, 245, 247, 0.86);
+  font-size: 1.075rem;
+  line-height: 1.85;
+}
+.prose-blog > * + * { margin-block-start: 1.6rem; }
+.prose-blog h2,
+.prose-blog h3 {
+  color: var(--color-fg);
+  font-family: var(--f-display);
+  font-weight: 600;
+  line-height: 1.22;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+.prose-blog h2 { font-size: clamp(1.5rem, 2.7vw, 2rem); margin-block-start: 3.2rem; }
+.prose-blog h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); margin-block-start: 2.4rem; }
+.prose-blog ul,
+.prose-blog ol { padding-inline-start: 1.5rem; }
+.prose-blog ul { list-style: disc; }
+.prose-blog ol { list-style: decimal; }
+.prose-blog li + li { margin-block-start: 0.55rem; }
+.prose-blog li::marker { color: var(--color-accent); }
+.prose-blog blockquote {
+  border-inline-start: 2px solid var(--color-accent);
+  padding-inline-start: 1.4rem;
+  color: var(--color-fg);
+  font-size: 1.15rem;
+  font-style: italic;
+}
+.prose-blog pre {
+  overflow-x: auto;
+  border: 1px solid var(--color-line);
+  border-radius: 0.6rem;
+  background: var(--color-surface);
+  padding: 1.1rem 1.25rem;
+  font-family: var(--f-mono);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+.prose-blog hr { border-color: var(--color-line); }
+html[lang="ar"] .prose-blog { font-size: 1.15rem; line-height: 2; }
+html[lang="ar"] .prose-blog blockquote { font-style: normal; }
+
 /* ───────────────────────────── Arabe / RTL ───────────────────────────── */
 /* L'espacement entre lettres casse la liaison des lettres arabes */
 html[lang="ar"] *,

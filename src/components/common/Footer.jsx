@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { ArrowUp } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { navigation } from "@/data/navigation";
+import { navigation, hrefForItem } from "@/data/navigation";
 import { siteConfig } from "@/data/site";
 import { getChannels } from "@/utils/channels";
 
@@ -31,7 +31,7 @@ export default function Footer() {
             <ul className="space-y-3 text-[15px]">
               {navigation.map((item) => (
                 <li key={item.id}>
-                  <Link href={`/${lang}#${item.id}`} className="link-underline text-fg/90 hover:text-accent">
+                  <Link href={hrefForItem(item, lang)} className="link-underline text-fg/90 hover:text-accent">
                     {t(item.labelKey)}
                   </Link>
                 </li>
@@ -73,7 +73,7 @@ export default function Footer() {
           </p>
           <p>{t("footer.built")}</p>
           <a
-            href="#home"
+            href={`/${lang}#home`}
             className="group inline-flex items-center gap-2 text-fg/80 transition-colors hover:text-accent"
             aria-label={t("a11y.backToTop")}
           >

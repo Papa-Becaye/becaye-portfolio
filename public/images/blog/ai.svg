@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Abstract artificial intelligence cover">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b0b0f"/><stop offset="1" stop-color="#101822"/></linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="55%"><stop stop-color="#62ff4a" stop-opacity=".2"/><stop offset="1" stop-color="#62ff4a" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <g fill="none" stroke="#292933" stroke-width="1.5">
+    <circle cx="600" cy="315" r="180"/><circle cx="600" cy="315" r="120"/><circle cx="600" cy="315" r="60"/>
+    <path d="M420 315h360M600 135v360M473 188l254 254M727 188 473 442"/>
+  </g>
+  <g fill="#62ff4a">
+    <circle cx="600" cy="135" r="7"/><circle cx="780" cy="315" r="7"/><circle cx="473" cy="442" r="7"/><circle cx="727" cy="188" r="7"/>
+  </g>
+  <g fill="#3a3a47"><circle cx="420" cy="315" r="5"/><circle cx="600" cy="495" r="5"/><circle cx="727" cy="442" r="5"/><circle cx="473" cy="188" r="5"/></g>
+  <circle cx="600" cy="315" r="14" fill="#62ff4a" opacity=".9"/>
+</svg>

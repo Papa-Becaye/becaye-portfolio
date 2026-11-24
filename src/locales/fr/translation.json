@@ -3,6 +3,9 @@
     "title": "Bécaye FALL — Développeur Full Stack & Entrepreneur Tech",
     "description": "Portfolio de Bécaye FALL, développeur Full Stack et entrepreneur tech basé à Dakar. Conception d'applications web, d'API, de bases de données et de produits numériques.",
     "projectTitle": "{{name}} — Bécaye FALL",
+    "workTitle": "Réalisations — Bécaye FALL",
+    "blogTitle": "Blog — Bécaye FALL",
+    "articleTitle": "{{title}} — Bécaye FALL",
     "ogAlt": "Bécaye FALL — Développeur Full Stack & Entrepreneur Tech"
   },
   "a11y": {
@@ -25,7 +28,52 @@
     "cv": "Télécharger le CV",
     "cvShort": "CV",
     "cvRequest": "Demander mon CV",
-    "cvRequestShort": "Mon CV"
+    "cvRequestShort": "Mon CV",
+    "work": "Réalisations",
+    "blog": "Blog"
+  },
+  "realisations": {
+    "eyebrow": "Portfolio",
+    "title": "Des projets, *pas des démos*.",
+    "intro": "Une sélection de produits et d'expériences où j'ai conçu, développé et déployé des solutions concrètes, de l'idée à la production.",
+    "filtersLabel": "Filtrer les projets",
+    "all": "Tous",
+    "featured": "Projet phare",
+    "count": "{{count}} projets",
+    "roleLabel": "Rôle",
+    "stackLabel": "Stack",
+    "viewCase": "Voir le projet",
+    "visit": "Visiter le site",
+    "empty": "Aucun projet dans cette catégorie pour le moment.",
+    "filters": {
+      "web": "Web",
+      "saas": "SaaS",
+      "backend": "Backend",
+      "experience": "Expérience pro"
+    }
+  },
+  "blog": {
+    "eyebrow": "Journal de bord",
+    "title": "Notes de *chantier*.",
+    "intro": "Retours d'expérience et idées sur le développement Full Stack, JavaScript, l'IA et la création de produits technologiques.",
+    "filtersLabel": "Filtrer les articles",
+    "all": "Tous",
+    "featured": "À la une",
+    "published": "Publié le",
+    "readTime": "{{minutes}} min de lecture",
+    "readArticle": "Lire l'article",
+    "back": "Tous les articles",
+    "next": "Article suivant",
+    "tagsLabel": "Sujets",
+    "coverAlt": "Image de couverture de l'article",
+    "empty": "Aucun article dans cette catégorie pour le moment.",
+    "categories": {
+      "fullstack": "Full Stack",
+      "javascript": "JavaScript",
+      "ai": "Intelligence artificielle",
+      "entrepreneurship": "Entrepreneuriat",
+      "learnings": "Retours d'expérience"
+    }
   },
   "availability": {
     "available": "Disponible pour de nouvelles opportunités",

@@ -3,6 +3,9 @@
     "title": "بكاي فال — مطوّر Full Stack ورائد أعمال تقني",
     "description": "الموقع الشخصي لبكاي فال، مطوّر Full Stack ورائد أعمال تقني مقيم في داكار. تصميم تطبيقات الويب وواجهات API وقواعد البيانات والمنتجات الرقمية.",
     "projectTitle": "{{name}} — بكاي فال",
+    "workTitle": "أعمالي — بكاي فال",
+    "blogTitle": "المدونة — بكاي فال",
+    "articleTitle": "{{title}} — بكاي فال",
     "ogAlt": "بكاي فال — مطوّر Full Stack ورائد أعمال تقني"
   },
   "a11y": {
@@ -25,7 +28,52 @@
     "cv": "تحميل السيرة الذاتية",
     "cvShort": "السيرة",
     "cvRequest": "اطلب سيرتي الذاتية",
-    "cvRequestShort": "سيرتي"
+    "cvRequestShort": "سيرتي",
+    "work": "أعمالي",
+    "blog": "المدونة"
+  },
+  "realisations": {
+    "eyebrow": "معرض الأعمال",
+    "title": "مشاريع، *لا مجرد تجارب*.",
+    "intro": "اختيار من المنتجات والتجارب التي صممتها وطوّرتها ونشرتها حلولاً حقيقية، من الفكرة إلى الإنتاج.",
+    "filtersLabel": "تصفية المشاريع",
+    "all": "الكل",
+    "featured": "مشروع مميز",
+    "count": "{{count}} مشاريع",
+    "roleLabel": "الدور",
+    "stackLabel": "التقنيات",
+    "viewCase": "عرض المشروع",
+    "visit": "زيارة الموقع",
+    "empty": "لا توجد مشاريع في هذه الفئة حاليًا.",
+    "filters": {
+      "web": "ويب",
+      "saas": "SaaS",
+      "backend": "الخادم",
+      "experience": "خبرة مهنية"
+    }
+  },
+  "blog": {
+    "eyebrow": "مذكرات ميدانية",
+    "title": "ملاحظات من *العمل*.",
+    "intro": "دروس مستفادة وأفكار حول تطوير Full Stack و JavaScript والذكاء الاصطناعي وبناء المنتجات التقنية.",
+    "filtersLabel": "تصفية المقالات",
+    "all": "الكل",
+    "featured": "مقال مميز",
+    "published": "نُشر في",
+    "readTime": "{{minutes}} دقيقة قراءة",
+    "readArticle": "قراءة المقال",
+    "back": "كل المقالات",
+    "next": "المقال التالي",
+    "tagsLabel": "المواضيع",
+    "coverAlt": "صورة غلاف المقال",
+    "empty": "لا توجد مقالات في هذه الفئة حاليًا.",
+    "categories": {
+      "fullstack": "Full Stack",
+      "javascript": "JavaScript",
+      "ai": "الذكاء الاصطناعي",
+      "entrepreneurship": "ريادة الأعمال",
+      "learnings": "دروس مستفادة"
+    }
   },
   "availability": {
     "available": "متاح لفرص جديدة",

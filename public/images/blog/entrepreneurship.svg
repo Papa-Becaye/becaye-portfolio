@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Abstract entrepreneurship cover">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#0b0b0f"/><stop offset="1" stop-color="#151a16"/></linearGradient>
+    <pattern id="dots" width="40" height="40" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.5" fill="#292933"/></pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+  <g fill="none" stroke="#62ff4a" stroke-width="2" opacity=".8"><path d="M190 470 380 330 570 390 760 210 1010 150"/></g>
+  <g fill="#62ff4a"><circle cx="190" cy="470" r="8"/><circle cx="380" cy="330" r="8"/><circle cx="570" cy="390" r="8"/><circle cx="760" cy="210" r="8"/><circle cx="1010" cy="150" r="14"/></g>
+  <g stroke="#292933" stroke-width="1"><path d="M190 470v90M380 330v230M570 390v170M760 210v350M1010 150v410"/></g>
+  <g fill="#292933"><rect x="160" y="120" width="180" height="10" rx="5"/><rect x="160" y="150" width="110" height="10" rx="5"/></g>
+</svg>

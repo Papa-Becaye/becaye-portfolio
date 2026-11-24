@@ -11,13 +11,21 @@ const nextConfig: NextConfig = {
   images: { formats: ["image/avif", "image/webp"] },
   async redirects() {
     // Langue par défaut : français
-    return [{ source: "/", destination: "/fr", permanent: false }];
+    return [
+      { source: "/", destination: "/fr", permanent: false },
+      { source: "/realisations", destination: "/fr/realisations", permanent: false },
+      { source: "/blog", destination: "/fr/blog", permanent: false },
+    ];
   },
   async headers() {
     return [
       {
         source: "/fonts/:path*",
         headers: [{ key: "Cache-Control", value: "public, max-age=31536000, immutable" }],
+      },
+      {
+        source: "/images/:path*",
+        headers: [{ key: "Cache-Control", value: "public, max-age=86400" }],
       },
       {
         source: "/:path*",
